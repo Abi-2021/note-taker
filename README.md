@@ -46,8 +46,8 @@ The server requires express to run the application, which can be installed by ty
 
 ## Screenshot
 
-<img src="./images/screenshot1.png"/><pre></pre>
-<img src="./images/screenshot2.png"/>
+<img src="./images/img1.png"><pre></pre>
+<img src="./images/img2.png">
 
 
 ## Deployed Application
