@@ -38,6 +38,15 @@ app.post('/api/notes', (req, res) => {
     res.status(201).json(note);
 })
 
+app.delete('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+    const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+    let existingNotes = [...notes];
+    existingNotes = existingNotes.filter(item => item.id !== id);
+    writeFile(existingNotes, res);
+    res.status(201).json({success: true});
+})
+
 app.get('/notes', (req, res) => {
     res.sendFile('./public/notes.html', {root: __dirname})
 })
