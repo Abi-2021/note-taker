@@ -52,10 +52,10 @@ The server requires express to run the application, which can be installed by ty
 
 ## Deployed Application
 
-[Heroku link](Heroku)
+[Heroku](https://note-taker-abi.herokuapp.com/)
 
 
 ## Contact
 
 [GitHub](https://github.com/Abi-2021)  
-[Email](abira0607@gmail.com)
+[Email](mailto:abira0607@gmail.com)
