@@ -1,12 +1,9 @@
 const fs = require('fs');
 const express = require('express');
-
 const uuid = require('uuid');
 
-
-const PORT = 5000;
-
 const app = express();
+
 app.use(express.json())
 app.use(express.static("public"));
 
@@ -55,6 +52,6 @@ app.get('*', (req, res) => {
     res.sendFile('./public/index.html', {root: __dirname})
 })
 
-app.listen(PORT, function () {
-    console.log(`Server running on port ${PORT}`)
+app.listen(process.env.PORT ||5000, function () {
+    console.log(`Server running on port ${process.env.PORT ||5000}`)
 });
